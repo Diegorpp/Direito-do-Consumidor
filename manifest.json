@@ -15,7 +15,7 @@
    	  "default_title": "feedback de dominio",
    	  "default_popup": "index.html",
       "default_icon":{
-        "32":"/imgs/sifrao.png"
+        "32":"/imgs/icon_gray.png"
       }
     }
 }

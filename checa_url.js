@@ -17,7 +17,7 @@ chrome.tabs.onUpdated.addListener( function obten_url(){
                 chrome.browserAction.setIcon({path:'/imgs/icon_yellow.png'});
             }
             else{
-                console.log("Esse site não está na lista");
+                chrome.browserAction.setIcon({path:'/imgs/icon_gray.png'});
             }
 
         });
