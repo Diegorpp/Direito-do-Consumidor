@@ -1,5 +1,5 @@
 document.addEventListener('DOMcontentLoaded',function (){
-
+chrome.browserAction.onClicked.addListener(function(tab) { alert('icon clicked')});
 })
 
 function verifica_dominio(){
@@ -11,3 +11,4 @@ function verifica_dominio(){
 function gera_notificacao(){
     alert("Script rodou corretamente")
 }
+
