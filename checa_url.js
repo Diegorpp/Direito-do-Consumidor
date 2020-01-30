@@ -4,7 +4,10 @@ chrome.tabs.onUpdated.addListener( function obten_url(){
             var url = tabs[0].url;
             console.log(url);
             if (url.includes("kabum.com.br")){
-                //console.log(true);
+                chrome.browserAction.setIcon({path:'/imgs/icon_green.png'});
+                chrome.browserAction.setPopup({popup:'/imgs/kabum_teste.png'})
+            }
+            else if (url.includes("magazineluiza.com.br")){
                 chrome.browserAction.setIcon({path:'/imgs/icon_green.png'});
             }
             else if (url.includes("submarino.com.br")){
