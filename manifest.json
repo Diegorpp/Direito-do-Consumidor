@@ -5,7 +5,8 @@
     "description": "Verificar a confiabilidade do site visitado",
     "author": "Diego",
     "permissions":[
-      "tabs"
+      "tabs",
+      "*reclameaqui.com.br/*"
     ],
     "background": {
       "scripts": ["checa_url.js"],
