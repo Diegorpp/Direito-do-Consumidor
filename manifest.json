@@ -3,7 +3,7 @@
     "version": "1.0",
     "name": "Check Site",
     "description": "Verificar a confiabilidade do site visitado",
-    "author": "Diego",
+    "author": "Diego, Gante e Debora",
     "permissions":[
       "tabs"
     ],

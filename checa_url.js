@@ -11,10 +11,17 @@ function parse (empresa){
         str = str.replace(/}/g, '"}');
         str = str.replace(/,/g, '","');
         str = str.replace(/ /g, '');
+        chrome.browserAction.setPopup({popup:'popup_principal.html'});
 
+        //Informações que conseguimos e que vamos utilizar.
         console.log(str);
         var res = JSON.parse(str);
         console.log(res.finalScore);
+        console.log(res.consumerScore);
+        console.log(res.answeredPercentual);
+        console.log(res.dealAgainPercentual);
+        console.log(res.status);
+
      };
      
 }
@@ -31,14 +38,14 @@ chrome.tabs.onUpdated.addListener( function obten_url(){
 
                 //Alteração do icone e do popup da aplicaçao de acordo com o site.
                 chrome.browserAction.setIcon({path:'/imgs/icon_green.png'});
-                chrome.browserAction.setPopup({popup:''});
+ //               chrome.browserAction.setPopup({popup:''});
             }
             else if (url.includes("magazineluiza.com.br")){
                 chrome.browserAction.setIcon({path:'/imgs/icon_green.png'});
-                chrome.browserAction.setPopup({popup:''});
+                chrome.browserAction.setPopup({popup:'index.html'});
             }
             else if (url.includes("submarino.com.br")){
-                chrome.browserAction.setIcon({path:'/imgs/icon_blue.png'});
+                chrome.browserAction.setIcon({path:'/imgs/icon_blue2.png'});
                 chrome.browserAction.setPopup({popup:''});
             }
             else if (url.includes("americanas.com")){
