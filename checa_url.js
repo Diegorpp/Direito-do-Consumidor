@@ -14,13 +14,14 @@ function parse (empresa){
         chrome.browserAction.setPopup({popup:'popup_principal.html'});
 
         //Informações que conseguimos e que vamos utilizar.
-        console.log(str);
-        var res = JSON.parse(str);
-        console.log(res.finalScore);
-        console.log(res.consumerScore);
-        console.log(res.answeredPercentual);
-        console.log(res.dealAgainPercentual);
-        console.log(res.status);
+        // console.log(str);
+        // var res = JSON.parse(str);
+        // console.log(res.finalScore);
+        // console.log(res.consumerScore);
+        // console.log(res.answeredPercentual);
+        // console.log(res.dealAgainPercentual);
+        // console.log(res.status);
+        // document.getElementbyId("fialScore").innerHTML = res.finalScore;
 
      };
      

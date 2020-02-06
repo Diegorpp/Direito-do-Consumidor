@@ -1,0 +1,12 @@
+body {
+    height: 350px;
+    width: 500px;
+    background-image: url('/imgs/porkim.png');
+    background-size: 500px 500px;
+}
+
+.container {
+    display: flex;
+    margin-top: 50%;
+    height: 50%;
+}
