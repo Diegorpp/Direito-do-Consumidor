@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box
+}
 body {
-
+    margin: 0;
     height: 500px;
     width: 500px;
 }
@@ -9,35 +12,34 @@ body {
     background-size: 100%;
     width:100%;
     height: 100%;
+    padding: 80px;
     
     display: flex;
     flex-direction: column;
 }
-.container {
-    margin: 60px;
-    margin-top: 90px;  
-    
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 5px;
-    border: 1px solid;
-}
-.container * {
-    display: flex;
-    justify-content: center;
-    border: 1px solid;
-    width: 100%;
+.score-container {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
 }
 
-#status{
-font-weight: bold;
-font-size: 3rem;
+.score-container > .status {
+    font-size: 48px;
+    font-weight: bold;
 }
 
-#finalScore{
-    font-size: 3rem;
+.score-container > .score {
+    font-size: 36px;
 }
-#icone
-#notas
+
+.complement-info {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.complement-info > .score{
+    margin-bottom: 8px;
+}
