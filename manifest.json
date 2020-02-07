@@ -13,7 +13,7 @@
     },
     "browser_action": {
    	  "default_title": "feedback de dominio",
-   	  "default_popup": "index.html",
+   	  "default_popup": "popup_principal.html",
       "default_icon":{
         "32":"/imgs/icon_gray.png"
       }
