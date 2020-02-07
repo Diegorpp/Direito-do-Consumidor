@@ -14,11 +14,12 @@ function parse (empresa){
     chrome.browserAction.setPopup({popup:'popup_principal.html'});
     var res = JSON.parse(str);
 
-    document.getElementById('js/status').innerHTML = res.status;
+    if (res.status == "GREAT") {document.getElementById('js/status').innerHTML = "ÓTIMO"};
     document.getElementById('js/score').innerHTML = res.finalScore+"/10";
     document.getElementById('js/consumer').innerHTML = "Nota do consumidor: "+res.consumerScore+"/10";
     document.getElementById('js/resp').innerHTML = "Reclamações Respondidas: "+res.answeredPercentual+"%";
     document.getElementById('js/dealagain').innerHTML = "Voltaria a fazer compra "+res.dealAgainPercentual+"%";
+
     console.log(str);
     console.log(res.finalScore);
     console.log(res.consumerScore);
